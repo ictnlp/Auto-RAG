@@ -23,11 +23,11 @@ If you find this project useful, feel free to ⭐️ it and give it a [citation]
 
 ## Models Download
 
-We provide trained Auto-RAG models using the synthetic data.
+We provide trained Auto-RAG models using the synthetic data. Please refer to https://huggingface.co/ICTNLP/Auto-RAG.
 
 ## Indexes and Corpus Download
 
-To deploy Auto-RAG, retrieval corpus is required. You could either download our processed [Wikipedia Dump for December 2018] corpus and index, or following [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/building-index.md) to build your own index. 
+To deploy Auto-RAG, retrieval corpus is required. You could either download our processed [Wikipedia Dump for December 2018]() corpus and index, or following [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/building-index.md) to build your own index. 
 
 ## Installation
 
