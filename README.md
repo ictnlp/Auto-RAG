@@ -46,7 +46,9 @@ conda env create -f environment.yml
 ```
 
 - Download indexes and corpus
-We provide the Wikipedia dump from December 2018 in [Google Drive]().
+
+We used the following dump version: https://archive.org/download/enwiki-20181220/enwiki-20181220-pages-articles.xml.bz2. Please follow the [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/process-wiki.md) to index it.
+
 
 ## Model deployment
 
@@ -94,7 +96,15 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python webui.py\
 If this repository is useful for you, please cite as:
 
 ```
-
+@article{yu2024autorag,
+      title={Auto-RAG: Autonomous Retrieval-Augmented Generation for Large Language Models}, 
+      author={Tian Yu and Shaolei Zhang and Yang Feng},
+      year={2024},
+      eprint={2411.19443},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.19443}, 
+}
 ```
 
 If you have any questions, feel free to contact `yutian23s@ict.ac.cn`.
