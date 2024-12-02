@@ -2,7 +2,7 @@
 
 > [Tian Yu](https://tianyu0313.github.io/), [Shaolei Zhang](https://zhangshaolei1998.github.io/), [Yang Feng](https://people.ucas.edu.cn/~yangfeng?language=en)*
 
-Source code for paper "[Auto-RAG: Autonomous Retrieval-Augmented Generation for Large Language models]()".
+Source code for paper "[Auto-RAG: Autonomous Retrieval-Augmented Generation for Large Language models](https://arxiv.org/abs/2411.19443)".
 
 If you find this project useful, feel free to ⭐️ it and give it a [citation](#citation)!
 
