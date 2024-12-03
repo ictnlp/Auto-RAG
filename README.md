@@ -27,7 +27,7 @@ If you find this project useful, feel free to ⭐️ it and give it a [citation]
 
 ## Models Download
 
-We provide trained Auto-RAG models using the synthetic data. Please refer to https://huggingface.co/ICTNLP/Auto-RAG.
+We provide trained Auto-RAG models using the synthetic data. Please refer to https://huggingface.co/ICTNLP/Auto-RAG-Llama-3-8B-Instruct.
 
 ## Indexes and Corpus Download
 
