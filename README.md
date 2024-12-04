@@ -31,7 +31,7 @@ We provide trained Auto-RAG models using the synthetic data. Please refer to htt
 
 ## Indexes and Corpus Download
 
-To deploy Auto-RAG, retrieval corpus is required. You can download from official [website](https://archive.org/download/enwiki-20181220/enwiki-20181220-pages-articles.xml.bz2) or our processed corpus (uploading soon), and following [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/building-index.md) to build your own index. 
+To deploy Auto-RAG, retrieval corpus is required. You can download from official [website](https://archive.org/download/enwiki-20181220/enwiki-20181220-pages-articles.xml.bz2) or our processed corpus (which will be uploaded soon), and following [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/building-index.md) to build your own index. 
 
 ## Installation
 
