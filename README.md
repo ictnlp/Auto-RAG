@@ -31,7 +31,7 @@ We provide trained Auto-RAG models using the synthetic data. Please refer to htt
 
 ## Indexes and Corpus Download
 
-To deploy Auto-RAG, retrieval corpus is required. You could either download our processed [Wikipedia Dump for December 2018]() corpus and index, and following [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/building-index.md) to build your own index. 
+To deploy Auto-RAG, retrieval corpus is required. You can download our processed [Wikipedia Dump for December 2018]() corpus, and following [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/building-index.md) to build your own index. 
 
 ## Installation
 
