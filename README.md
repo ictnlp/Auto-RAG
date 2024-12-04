@@ -31,7 +31,7 @@ We provide trained Auto-RAG models using the synthetic data. Please refer to htt
 
 ## Indexes and Corpus Download
 
-To deploy Auto-RAG, retrieval corpus is required. You could either download our processed [Wikipedia Dump for December 2018]() corpus and index, or following [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/building-index.md) to build your own index. 
+To deploy Auto-RAG, retrieval corpus is required. You could either download our processed [Wikipedia Dump for December 2018]() corpus and index, and following [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/building-index.md) to build your own index. 
 
 ## Installation
 
@@ -51,7 +51,7 @@ conda env create -f environment.yml
 
 - Download indexes and corpus
 
-We used the following dump version: https://archive.org/download/enwiki-20181220/enwiki-20181220-pages-articles.xml.bz2. Please follow the [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/process-wiki.md) to index it.
+We used the following dump version: https://archive.org/download/enwiki-20181220/enwiki-20181220-pages-articles.xml.bz2. Please follow the [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG/blob/main/docs/process-wiki.md) to process and index it.
 
 
 ## Model deployment
