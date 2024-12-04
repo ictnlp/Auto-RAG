@@ -13,7 +13,7 @@ If you find this project useful, feel free to ⭐️ it and give it a [citation]
 
 ## Overview
 
-**Auto-RAG** is an autonomous iterative retrieval model centered on the LLM's powerful decision-making capabilities. Auto-RAG models the interaction between the LLM and the retriever through multi-turn dialogue, employs iterative reasoning to determine when to retrieve information and what to retrieve, ceasing the iteration when sufficient external knowledge is available, and subsequently providing the answer to the user.
+**Auto-RAG** is an autonomous iterative retrieval model centered on the LLM's powerful decision-making capabilities. Auto-RAG models the interaction between the LLM and the retriever through multi-turn dialogue, employs iterative reasoning to determine when and what to retrieve, ceasing the iteration when sufficient external knowledge is available, and subsequently providing the answer to the user.
 
 - **GUI interaction**: We provide a deployable user interaction interface. After inputting a question, Auto-RAG autonomously engages in interaction with the retriever without any human intervention. Users have the option to decide whether to display the details of the interaction between Auto-RAG and the retriever.
 
