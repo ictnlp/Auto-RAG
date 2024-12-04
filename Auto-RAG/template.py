@@ -177,7 +177,7 @@ Final Answer: Prithvipati Shah.
 WikiMultiHop_Retrieval_Query_Template = """
 Your task is to generate 4 different queries for BM25 based on the information needs in the model's responses and the last query. Your queries need to be as simple as possible. If the needs are multi-hop, you need to generate queries that help solve sub-problems. The refined queries should be the same as the last query.
 
-Demostration:
+Demonstration:
 
 Model Response: Based on the Retrieved Document_1, the director of film The Gal Who Took the West is Frederick de Cordova. However, there is no information about the date of death of Frederick de Cordova in this document. To answer the question, we need to find the date of death of Frederick de Cordova.
 
@@ -376,7 +376,7 @@ Final Answer: 5 degrees of freedom.
 NQ_Retrieval_Query_Template = """
 Your task is to generate 4 different queries for BM25 based on the information needs in the model's responses and the last query. Your queries need to be as simple as possible. If the needs are multi-hop, you need to generate queries that help solve sub-problems. The refined queries should be the same as the last query.
 
-Demostration:
+Demonstration:
 
 Origin Question: District of maharashtra that are part of red corridor?
 
@@ -441,7 +441,7 @@ Last Query: {}
 NQ_Elicitation_Prompt = """
 Your task is to generate one corresponding document based on the model's requirements and queries to help the model answer questions.
 
-Demostration:
+Demonstration:
 
 Origin Question: How many episodes in a season of vampire diaries?
 
@@ -495,7 +495,7 @@ Document: """
 Knowledge_Prompt = """
 Your task is to generate one corresponding wikipedia document based on the given query to help the LLM answer questions.
 
-Demostration:
+Demonstration:
 
 Origin Question: How many episodes in a season of vampire diaries?
 
