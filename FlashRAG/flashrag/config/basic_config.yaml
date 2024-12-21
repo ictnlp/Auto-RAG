@@ -1,0 +1,102 @@
+# ------------------------------------------------Global Paths------------------------------------------------#
+# Paths to various models
+model2path:
+  e5: "intfloat/e5-base-v2"
+  bge: "intfloat/e5-base-v2"
+  contriever: "facebook/contriever"
+  llama2-7B-chat: "meta-llama/Llama-2-7b-chat-hf"
+  llama2-7B: "meta-llama/Llama-2-7b-hf"
+  llama2-13B: "meta-llama/Llama-2-13b-hf"
+  llama2-13B-chat: "meta-llama/Llama-2-13b-chat-hf"
+  
+# Pooling methods for each embedding model
+model2pooling:
+  e5: "mean"
+  bge: "cls"
+  contriever: "mean"
+  jina: 'mean'
+  dpr: cls
+
+# Indexes path for retrieval models
+method2index:
+  e5: ~
+  bm25: ~
+  contriever: ~
+
+# ------------------------------------------------Environment Settings------------------------------------------------#
+# Directory paths for data and outputs
+data_dir: "dataset/"
+save_dir: "output/"
+
+gpu_id: "0,1,2,3"
+dataset_name: "nq" # name of the dataset in data_dir
+split: ["test"]  # dataset split to load (e.g. train,dev,test)
+
+# Sampling configurations for testing
+test_sample_num: ~  # number of samples to test (only work in dev/test split), if None, test all samples
+random_sample: False # whether to randomly sample the test samples
+
+# Seed for reproducibility
+seed: 2024
+
+# Whether save intermediate data
+save_intermediate_data: True
+save_note: 'experiment'
+
+# -------------------------------------------------Retrieval Settings------------------------------------------------#
+# If set the name, the model path will be find in global paths
+retrieval_method: "e5"  # name or path of the retrieval model. 
+retrieval_model_path: ~ # path to the retrieval model
+index_path: ~ # set automatically if not provided. 
+faiss_gpu: False # whether use gpu to hold index
+corpus_path: ~  # path to corpus in '.jsonl' format that store the documents
+
+use_sentence_transformer: False
+retrieval_topk: 5 # number of retrieved documents
+retrieval_batch_size: 256  # batch size for retrieval
+retrieval_use_fp16: True  # whether to use fp16 for retrieval model
+retrieval_query_max_length: 128  # max length of the query
+save_retrieval_cache: True # whether to save the retrieval cache
+use_retrieval_cache: False # whether to use the retrieval cache
+retrieval_cache_path: ~ # path to the retrieval cache
+retrieval_pooling_method: ~ # set automatically if not provided
+
+use_reranker: False # whether to use reranker
+rerank_model_name: ~ # same as retrieval_method
+rerank_model_path: ~ # path to reranker model, path will be automatically find in `model2path`
+rerank_pooling_method: ~
+rerank_topk: 5  # number of remain documents after reranking
+rerank_max_length: 512 
+rerank_batch_size: 256 # batch size for reranker
+rerank_use_fp16: True
+
+# -------------------------------------------------Generator Settings------------------------------------------------#
+framework: fschat # inference frame work of LLM, supporting: 'hf','vllm','fschat', 'openai'
+generator_model: "llama3-8B-instruct" # name or path of the generator model
+# setting for openai model, only valid in openai framework
+openai_setting:
+  api_key: ~
+  base_url: ~
+
+generator_model_path: ~
+generator_max_input_len: 1024  # max length of the input
+generator_batch_size: 4 # batch size for generation, invalid for vllm
+generation_params:  
+  #do_sample: false
+  max_tokens: 32
+  #temperature: 1.0
+  #top_p: 1.0
+use_fid: False # whether to use FID, only valid in encoder-decoder model
+gpu_memory_utilization: 0.85 # ratio of gpu's memory usage for generator
+
+# -------------------------------------------------Evaluation Settings------------------------------------------------#
+# Metrics to evaluate the result
+metrics: ['em','f1','acc','precision','recall','input_tokens'] 
+# Specify setting for metric, will be called within certain metrics
+metric_setting: 
+  retrieval_recall_topk: 5
+  tokenizer_name: 'gpt-4'
+save_metric_score: True #　whether to save the metric score into txt file
+
+
+
