@@ -1,4 +1,4 @@
-# Auto-RAG: Autonomous Retrieval-Augmented Generation for Large Language models
+# Auto-RAG: Autonomous Retrieval-Augmented Generation for Large Language Models
 
 > [Tian Yu](https://tianyu0313.github.io/), [Shaolei Zhang](https://zhangshaolei1998.github.io/), [Yang Feng](https://people.ucas.edu.cn/~yangfeng?language=en)*
 
@@ -6,7 +6,7 @@
 [![code](https://img.shields.io/badge/Github-Code-keygen.svg?logo=github)](https://github.com/ictnlp/Auto-RAG)
 [![model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging_Face-Model-blue.svg)](https://huggingface.co/ICTNLP/Auto-RAG)
 
-Source code for paper "[Auto-RAG: Autonomous Retrieval-Augmented Generation for Large Language models](https://arxiv.org/abs/2411.19443)".
+Source code for paper "[Auto-RAG: Autonomous Retrieval-Augmented Generation for Large Language Models](https://arxiv.org/abs/2411.19443)".
 
 If you find this project useful, feel free to ⭐️ it and give it a [citation](#citation)!
 
