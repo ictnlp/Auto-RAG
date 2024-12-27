@@ -28,6 +28,7 @@ If you find this project useful, feel free to ⭐️ it and give it a [citation]
 ## Models Download
 
 We provide trained Auto-RAG models using the synthetic data. Please refer to https://huggingface.co/ICTNLP/Auto-RAG-Llama-3-8B-Instruct.
+
 For retriever, we utilize [e5-base-v2](https://huggingface.co/intfloat/e5-base-v2) for dense retrieval, following FlashRAG.
 
 ## Indexes and Corpus Download
