@@ -18,7 +18,7 @@ If you find this project useful, feel free to ⭐️ it and give it a [citation]
 - **GUI interaction**: We provide a deployable user interaction interface. After inputting a question, Auto-RAG autonomously engages in interaction with the retriever without any human intervention. Users have the option to decide whether to display the details of the interaction between Auto-RAG and the retriever.
 
 <div  align="center">   
-  <img src="./assets/auto-rag.gif" alt="img" width="90%" />
+  <img src="./assets/autorag.gif" alt="img" width="90%" />
 </div>
 
 
@@ -105,7 +105,7 @@ python -m flexrag.entrypoints.run_assistant \
 > Experimental results show that Auto-RAG outperforms all baselines across six benchmarks.
 
 <div  align="center">   
-  <img src="./assets/results.png" alt="img" width="100%" />
+  <img src="./assets/results_.png" alt="img" width="100%" />
 </div>
 <p align="center">
 
