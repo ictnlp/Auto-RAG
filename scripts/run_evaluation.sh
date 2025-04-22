@@ -2,13 +2,13 @@
 
 ENCODER_PATH='intfloat/e5-base-v2'
 MODEL_NAME="<name of your deployed vllm model>"
-BASE_URL="<your model url>"
-DATA_PATH="<path to the test data>"
+BASE_URL="http://127.0.0.1:8000/v1"
 
 
 python -m flexrag.entrypoints.run_assistant \
     user_module=Auto-RAG \
-    data_path=$DATA_PATH \
+    name=nq \
+    split=test \
     assistant_type=autorag \
     autorag_config.model_name=$MODEL_NAME \
     autorag_config.base_url=$BASE_URL \
