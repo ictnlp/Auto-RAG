@@ -11,7 +11,8 @@ gunzip psgs_w100.tsv.gz
 python -m flexrag.entrypoints.prepare_index \
     retriever_type=dense \
     file_paths=[psgs_w100.tsv] \
-    saving_fields=[id,title,text] \
+    id_field='id' \
+    saving_fields=[title,text] \
     dense_config.database_path=wiki \
     dense_config.encode_fields=[text] \
     dense_config.passage_encoder_config.encoder_type=hf \

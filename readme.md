@@ -56,7 +56,7 @@ bash scripts/prepare_retriever.sh
 
 ## Model deployment
 
-We use vLLM to deploy the model for inference. You can update the parameters in vllm.sh to adjust the GPU and model path configuration, then execute:
+We use vLLM to deploy the model for inference. You can update the parameters in deploy.sh to adjust the GPU and model path configuration, then execute:
 
 ```bash
 bash scripts/deploy.sh

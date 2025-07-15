@@ -149,8 +149,8 @@ class AutoRAGAssistant(AssistantBase):
 
             # process retrieved documents
             for result in retrieval_results:
-                if result.data["id"] not in retrieved_ids:
-                    retrieved_ids.append(result.data["id"])
+                if result.context_id not in retrieved_ids:
+                    retrieved_ids.append(result.context_id)
                     documents.append(result.data["text"].split("\n")[-1])
                 if len(documents) >= self.max_passages:
                     break
@@ -322,8 +322,8 @@ class AutoRAGAssistant(AssistantBase):
 
             # process retrieved documents
             for result in retrieval_results:
-                if result.data["id"] not in retrieved_ids:
-                    retrieved_ids.append(result.data["id"])
+                if result.context_id not in retrieved_ids:
+                    retrieved_ids.append(result.context_id)
                     documents.append(result.data["text"].split("\n")[-1])
                 if len(documents) >= self.max_passages:
                     break
