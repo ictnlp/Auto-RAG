@@ -379,8 +379,10 @@ class AutoRAGAssistant(AssistantBase):
             max_iter -= 1
         return (
             response,
-            RetrievedContext(
-                retriever="autorag", query=question, data={"text": document}
-            ),
+            [
+                RetrievedContext(
+                    retriever="autorag", query=question, data={"text": document}
+                )
+            ],
             {"prompt": prompt},
         )
